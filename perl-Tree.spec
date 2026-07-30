@@ -1,13 +1,14 @@
 %define upstream_name    Tree
+%define upstream_version 1.16
 Name:		perl-%{upstream_name}
-Version:	1.01
-Release:	6
+Version:	1.16
+Release:	1
 
 Summary:	A tree datastructure
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		https://metacpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module//%{upstream_name}-%{version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/R/RS/RSAVAGE/Tree-1.16.tgz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -43,15 +44,3 @@ perl Makefile.PL INSTALLDIRS=vendor
 %{_mandir}/man3/*
 %{perl_vendorlib}/*
 
-%changelog
-* Mon Apr 25 2011 Funda Wang <fwang@mandriva.org> 1.10.0-2mdv2011.0
-+ Revision: 658411
-- rebuild for updated rpm-setup
-
-* Thu Sep 17 2009 Jérôme Quelin <jquelin@mandriva.org> 1.10.0-1mdv2010.0
-+ Revision: 444017
-- import perl-Tree
-
-
-* Thu Sep 17 2009 cpan2dist 1.01-1mdv
-- initial mdv release, generated with cpan2dist
